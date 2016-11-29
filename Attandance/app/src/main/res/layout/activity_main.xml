@@ -18,18 +18,19 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_weight="0.2"
-            android:layout_height="fill_parent"
+            android:layout_weight="0.4"
+            android:layout_height="match_parent"
             android:orientation="horizontal"
+            android:gravity="center"
 
             >
 
             <ImageView
                 android:layout_gravity="center"
                 android:layout_margin="5sp"
-                android:layout_height="fill_parent"
-                android:layout_width="fill_parent"
-                android:src="@drawable/login"
+                android:layout_height= "wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@drawable/classroom"
                 android:contentDescription="logo"
                 android:id="@+id/iv_logo" />
         </LinearLayout>
@@ -37,31 +38,52 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:layout_weight="0.8">
+            android:layout_weight="0.6">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_weight="0.15"
-                android:layout_height="fill_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
                 android:text="@string/username"/>
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="fill_parent"
-                android:layout_weight="0.15"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:foreground="#c6c3c6"
+                android:fontFamily="sans-serif-thin"
+                android:textStyle="normal"
+                android:id="@+id/et_name"
                 android:inputType="text" />
             <TextView
+                android:layout_marginTop="5sp"
                 android:layout_width="match_parent"
-                android:layout_height="fill_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="0.15"
+                android:textStyle="bold"
                 android:text="@string/password"/>
             <EditText
                 android:inputType="textPassword"
-                android:layout_weight="0.15"
-                android:layout_width="match_parent"
-                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-thin"
+                android:foreground="#c6c3c6"
+                android:id="@+id/et_password"
+                android:textStyle="normal"
                />
+            <Button android:layout_gravity="center"
+                android:layout_margin="7sp"
+                android:layout_weight="0.1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_login"
+                android:text="@string/login"
+                android:textAlignment="center"
+                android:background="@drawable/round_button">
 
-            </LinearLayout>
+            </Button>
+
+        </LinearLayout>
 
 
     </LinearLayout>
