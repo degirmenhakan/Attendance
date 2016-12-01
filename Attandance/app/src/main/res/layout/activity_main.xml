@@ -18,7 +18,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_weight="0.4"
+            android:layout_weight="0.6"
             android:layout_height="match_parent"
             android:orientation="horizontal"
             android:gravity="center"
@@ -27,8 +27,8 @@
 
             <ImageView
                 android:layout_gravity="center"
-                android:layout_margin="5sp"
-                android:layout_height= "wrap_content"
+                android:layout_margin="2sp"
+                android:layout_height= "match_parent"
                 android:layout_width="wrap_content"
                 android:src="@drawable/classroom"
                 android:contentDescription="logo"
@@ -40,28 +40,18 @@
             android:orientation="vertical"
             android:layout_weight="0.6">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_weight="0.15"
-                android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:text="@string/username"/>
+
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.1"
+                android:layout_height ="wrap_content"
+                android:layout_weight="0.015"
                 android:foreground="#c6c3c6"
                 android:fontFamily="sans-serif-thin"
                 android:textStyle="normal"
+                android:hint="Kullanıcı Adı"
                 android:id="@+id/et_name"
                 android:inputType="text" />
-            <TextView
-                android:layout_marginTop="5sp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.15"
-                android:textStyle="bold"
-                android:text="@string/password"/>
+
             <EditText
                 android:inputType="textPassword"
                 android:layout_width="fill_parent"
@@ -69,11 +59,13 @@
                 android:fontFamily="sans-serif-thin"
                 android:foreground="#c6c3c6"
                 android:id="@+id/et_password"
+                android:layout_weight="0.015"
                 android:textStyle="normal"
+                android:hint="Şifre"
                />
             <Button android:layout_gravity="center"
-                android:layout_margin="7sp"
-                android:layout_weight="0.1"
+                android:layout_margin="11sp"
+                android:layout_weight="0.01"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/btn_login"
